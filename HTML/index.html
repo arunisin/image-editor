@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e44ee189db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Image editor</h2>
+      <div class="wrapper">
+        <div class="editor-panel">
+          <div class="filter">
+            <label class="title">Filters</label>
+            <div class="options">
+              <button class="active">Brightness</button>
+              <button>Saturation</button>
+              <button>Inversion</button>
+              <button>Grayscale</button>
+            </div>
+            <div class="slider">
+              <div class="filter-info">
+                <p class="name">Brightness</p>
+                <p class="name">100%</p>
+              </div>
+              <input type="range" value="100" min="0" max="100" />
+            </div>
+          </div>
+          <div class="rotate">
+            <label class="title">Rotate and Flip</label>
+            <div class="options">
+              <button><i class="fa-solid fa-rotate-left"></i></button>
+              <button><i class="fa-solid fa-rotate-right"></i></button>
+              <button><i class="bx bx-reflect-vertical"></i></button>
+              <button><i class="bx bx-reflect-horizontal"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="preview-img">
+          <img
+            src="https://codingnepalweb.com/demos/image-editor-javascript/image-placeholder.svg"
+            alt="placeholder img"
+          />
+        </div>
+      </div>
+      <button class="filter-reset">Reset Filter</button>
+      <div class="row">
+        <button class="choose-img">Choose image</button>
+        <button class="save-img">Save image</button>
+      </div>
+    </div>
+  </body>
+</html>

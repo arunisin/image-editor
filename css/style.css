@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e3f2fd;
+}
+
+.container {
+  width: 850px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 30px 35px 35px;
+}
+
+.container h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.container .wrapper {
+  display: flex;
+  margin: 20px 0;
+  min-height: 335px;
+}
+
+.wrapper .editor-panel {
+  width: 280px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.editor-panel .title {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.editors-panel .options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.editor-panel button {
+  height: 40px;
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.editor-panel .filter button {
+  width: calc(100% / 2 - 4px);
+}
+.filter button.active {
+  background: #5372f0;
+  color: #fff;
+  border-color: #5372f0;
+}
+.wrapper .preview-img img {
+}
