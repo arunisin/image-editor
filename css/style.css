@@ -45,7 +45,8 @@ body {
   margin-bottom: 12px;
 }
 
-.editors-panel .options {
+.editors-panel .options,
+.controls {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -73,5 +74,72 @@ body {
   border-color: #5372f0;
 }
 
-.wrapper .preview-img img {
+.editor-panel .rotate button {
+  width: calc(100% / 4 - 4px);
+}
+
+.filter .slider {
+  margin-top: 12px;
+}
+
+.filter .slider .filter-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.filter .slider input {
+  width: 100%;
+  height: 5px;
+  accent-color: #5372f0;
+}
+
+.editor-panel .rotate {
+  margin-top: 17px;
+}
+
+.rotate button:nth-child(3),
+.rotate button:nth-child(4) {
+  font-size: 18px;
+}
+
+.wrapper .preview-img {
+  margin-left: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-img img {
+  max-width: 490px;
+  max-height: 335px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.controls button {
+  padding: 11px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.controls .reset-filter {
+  color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+.controls .choose-img {
+  background: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+.controls .save-img {
+  margin-left: 5px;
+  background: #5372f0;
+  border: 1px solid #5372f0;
 }
