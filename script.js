@@ -159,3 +159,4 @@ chooseImgBtn.addEventListener("click", () => fileInput.click());
 filterSlider.addEventListener('click', updateFilter);
 resetFilterBtn.addEventListener('click', resetFilter);
 saveImgBtn.addEventListener('click', saveImg);
+filterSlider.addEventListener('touchstart', updateFilter);
