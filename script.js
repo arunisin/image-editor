@@ -83,10 +83,10 @@ let rotate = 0, scaleX=1, scaleY=1;
 rotateOptions.forEach(option=> {
   option.addEventListener('click', () => {
     if (option.id === 'left') {
-      rotate += 90;
+      rotate -= 90;
     }
     else if (option.id === 'right') {
-      rotate -= 90;
+      rotate += 90;
     }
     else if (option.id === 'vertical') {
       if (scaleX === 1) {
